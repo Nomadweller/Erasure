@@ -7,7 +7,9 @@ if (ability && color = 1){
 //Set x direction
 x_dir = right-left;
 y_dir = down-up;
-
+// Set up movement tracker
+delta_x = x;
+delta_y = y;
 //Apply accel to speed us up and drag to slow
 
 // Apply X acceleration
@@ -43,7 +45,7 @@ if (abs(x_spd) > max_spd) {
 if (abs(y_spd) > max_spd) {
 	y_spd = max_spd*sign(y_spd);
 }
-var moved = false;
+
 // X collisions
 if place_meeting(x+x_spd,y,ob_wall) {
 	while (!place_meeting(x+sign(x_spd),y,ob_wall)) {
@@ -54,7 +56,6 @@ if place_meeting(x+x_spd,y,ob_wall) {
 else {
 	// Move normally
 	x+= x_spd;
-	moved = true;
 }
 // Y collisions
 if place_meeting(x,y+y_spd,ob_wall) {
@@ -66,17 +67,27 @@ if place_meeting(x,y+y_spd,ob_wall) {
 else {
 	// Move normally
 	y += y_spd;
-	moved = true;
 }
 
-if (moved) {
+delta_y = abs(delta_y - y);
+delta_x = abs(delta_x - x);
+if (delta_y + delta_x > 0){
+	deltaMovement++;
+}
+
+if (deltaMovement > 10) {
 	// Paint ground
-	if(ob_player.sprite_index != spr_pc) {
-		instance_create_depth(x,y,1, ob_paint); // imprtant
+	if(ob_player.sprite_index != spr_pc_wht) {
+		instance_create_depth(x+irandom(20) - 10,y+65+irandom(20) - 10,paint_layer, ob_paint);
+		paint_layer--;
+		if (paint_layer == 0) {
+			paint_layer = 1599;
+		}
 	}
-	if(place_meeting(x,y, ob_end_goal)) {
-		show_message("You did it! You know I always belived in you and your space pressing ability. Let's do it again.");
-		game_restart();
-	}
-	
+	deltaMovement = 0;
+}
+// tutorial stuff: 
+if(place_meeting(x,y, ob_end_goal)) {
+	show_message("You did it! You know I always belived in you and your space pressing ability. Let's do it again.");
+	game_restart();
 }

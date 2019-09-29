@@ -12,12 +12,17 @@ accel = 1;
 max_spd = 5;
 drag = 1;
 
+// Set up movement tracker
+deltaMovement = 0;
+
 // For painting
 shownMessage = false;
+paint_layer = 1599;
 
 // For abilities
 color = 0;
 can_jump = true;
+can_scale = true;
 jump_distance = 128;
 jump_target_inst = 0;
 
