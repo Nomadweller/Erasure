@@ -8,5 +8,9 @@ if (ability)
 	if ((color == 2) && can_scale) {
 		// The scale ability has been activated
 	}
+	if ((color == 3) && can_traverse) {
+		// The scale ability has been activated
+		scr_ethereal_ability();
+	}
 }
 

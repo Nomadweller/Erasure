@@ -1,6 +1,8 @@
-
 // Do not move if aiming jump
 if (ability && color = 1){
+	return;
+}
+if (ability && color = 3){
 	return;
 }
 
@@ -48,10 +50,17 @@ if (abs(y_spd) > max_spd) {
 
 // X collisions
 if place_meeting(x+x_spd,y,ob_wall) {
+	var wall = instance_nearest(x, y, ob_wall);
+	if (place_meeting(x+x_spd,y,ob_interactable_wall)) {
+		if(wall.isEthereal) {
+		x+= x_spd; }
+	}
+	else {
 	while (!place_meeting(x+sign(x_spd),y,ob_wall)) {
 		x += sign(x_spd);
 	}
 	x_dir = 0;
+	}
 }
 else {
 	// Move normally
@@ -59,10 +68,17 @@ else {
 }
 // Y collisions
 if place_meeting(x,y+y_spd,ob_wall) {
+	var wall = instance_nearest(x, y, ob_wall);
+	if (place_meeting(x+x_spd,y,ob_interactable_wall)) {
+		if(wall.isEthereal) {
+		x+= x_spd; }
+	}
+	else {
 	while (!place_meeting(x,y+sign(y_spd),ob_wall)) {
 		y += sign(y_spd);
 	}
 	y_spd = 0;
+	}
 }
 else {
 	// Move normally
@@ -88,6 +104,10 @@ if (deltaMovement > 10) {
 }
 // tutorial stuff: 
 if(place_meeting(x,y, ob_end_goal)) {
+	if	(room == Level1) {
+		room_goto_next(); }
+	else {
 	show_message("You did it! You know I always belived in you and your space pressing ability. Let's do it again.");
 	game_restart();
+	}
 }
