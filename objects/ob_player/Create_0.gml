@@ -12,8 +12,10 @@ accel = 1;
 max_spd = 5;
 drag = 1;
 
-// Set up movement tracker
+// Set up movement trackers
 deltaMovement = 0;
+x_prev_dir = 0;
+y_prev_dir = 0;
 
 // For painting
 shownMessage = false;

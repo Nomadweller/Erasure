@@ -56,10 +56,9 @@ if place_meeting(x+x_spd,y,ob_wall) {
 		x+= x_spd; }
 	}
 	else {
-	while (!place_meeting(x+sign(x_spd),y,ob_wall)) {
-		x += sign(x_spd);
-	}
-	x_dir = 0;
+		while (!place_meeting(x+sign(x_spd),y,ob_wall)) {
+			x += sign(x_spd);
+		}
 	}
 }
 else {
@@ -74,10 +73,9 @@ if place_meeting(x,y+y_spd,ob_wall) {
 		x+= x_spd; }
 	}
 	else {
-	while (!place_meeting(x,y+sign(y_spd),ob_wall)) {
-		y += sign(y_spd);
-	}
-	y_spd = 0;
+		while (!place_meeting(x,y+sign(y_spd),ob_wall)) {
+			y += sign(y_spd);
+		}
 	}
 }
 else {
