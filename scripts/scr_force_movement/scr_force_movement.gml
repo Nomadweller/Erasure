@@ -91,7 +91,9 @@ if (delta_y + delta_x > 0){
 
 if (deltaMovement > 10) {
 	// Paint ground
-	if(ob_player.sprite_index != spr_pc_wht) {
+	var current_sprite_name = sprite_get_name(sprite_index);
+	
+	if(string_pos("wht", current_sprite_name) == 0) {
 		instance_create_depth(x+irandom(20) - 10,y+65+irandom(20) - 10,paint_layer, ob_paint);
 		paint_layer--;
 		if (paint_layer == 0) {
