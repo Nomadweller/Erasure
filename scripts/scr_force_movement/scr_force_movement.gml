@@ -52,7 +52,7 @@ if (abs(y_spd) > max_spd) {
 if place_meeting(x+x_spd,y,ob_wall) {
 	scr_wall_change();
 	var wall = instance_nearest(x, y, ob_wall);
-	if (object_is_ancestor(wall, ob_wall)) {
+	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
 		x+= x_spd; }
 	}
@@ -70,7 +70,7 @@ else {
 if place_meeting(x,y+y_spd,ob_wall) {
 	var wall = instance_nearest(x, y, ob_wall);
 	scr_wall_change();
-	if (object_is_ancestor(wall, ob_wall)) {
+	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
 		x+= x_spd; }
 	}
