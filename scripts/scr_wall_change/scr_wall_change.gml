@@ -1,6 +1,10 @@
 player = instance_nearest(x,y, ob_player)
 wall = instance_nearest(x,y, ob_wall)
 
+	if(object_is_ancestor(wall.object_index, ob_wall))
+	{
+		wall.sprite_index = sp_int_wall;
+	}
 	switch (player.color)
 	{
 		case 1 : 

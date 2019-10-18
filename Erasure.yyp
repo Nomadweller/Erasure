@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "59f29dd5-b683-4675-9d82-75c0ac807b3b",
+            "Value": {
+                "id": "a9bcd36b-b065-413b-a089-65e4037815e7",
+                "resourcePath": "sprites\\sp_for_dev_int_wall\\sp_for_dev_int_wall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6110a61b-02e7-4bf4-bddb-9f4e7ceb7d4e",
             "Value": {
                 "id": "e47251a7-a52d-42a9-8a2a-65e649242bf0",
@@ -244,6 +252,14 @@
                 "id": "5a4aff6e-2a84-4ec6-af78-ba40fa80132e",
                 "resourcePath": "scripts\/scr_ethereal_ability\/scr_ethereal_ability.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6e855d90-ce77-4409-83d8-93f1cdff9d7b",
+            "Value": {
+                "id": "f76f0614-72de-4022-bc8b-a97d711f6fc0",
+                "resourcePath": "sprites\\sp_int_wall\\sp_int_wall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -607,6 +623,14 @@
             }
         },
         {
+            "Key": "e8b39250-619c-4efe-9132-327fc960c944",
+            "Value": {
+                "id": "b6814fc9-3c57-493c-9ca4-3904410ad43c",
+                "resourcePath": "scripts\\scr_room_reset\\scr_room_reset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ea66cc9b-b190-41ca-95e2-f678d977cf50",
             "Value": {
                 "id": "053c78ac-9f53-4441-8504-6ce1a3ee8913",
@@ -690,7 +714,8 @@
         "65315be3-fa56-4c0f-be04-d37c8abd0ea4",
         "51b2a734-35e9-49c0-a71d-9c968afb8a1e",
         "1b3059d4-7137-4de7-b42a-fc33f1c7a091",
-        "b245e429-a9ca-4079-88a7-a23225ca8626"
+        "b245e429-a9ca-4079-88a7-a23225ca8626",
+        "e8b39250-619c-4efe-9132-327fc960c944"
     ],
     "tutorial": ""
 }

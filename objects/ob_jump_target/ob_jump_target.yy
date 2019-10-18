@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "ob_jump_target",
     "eventList": [
-        
+        {
+            "id": "85937bd1-3710-45e1-abe0-c01585183773",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "c08f6b7f-1449-4356-ba5c-dfe9c93c3e2f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

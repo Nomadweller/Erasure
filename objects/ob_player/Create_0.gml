@@ -30,6 +30,7 @@ can_traverse = true;
 jump_distance = 128;
 jump_target_inst = noone;
 
-
-if(ev_room_start)
+persistent = true;
+depth = -1000;
+if(ev_game_start)
 show_message("Hey you! Come talk to me, I've got something for you. I'm the red blob over here.")	

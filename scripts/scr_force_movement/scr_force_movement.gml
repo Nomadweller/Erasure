@@ -111,7 +111,18 @@ if(place_meeting(x,y, ob_end_goal)) {
 		game_restart();
 		}
 	else {
+	room = room_goto_next();
 	room_goto_next();
-	
+	if (room == Level1)
+	{
+		show_message("Level 2, Begin!");
+		ob_player.x = 1000;
+		ob_player.y = 350;
+	}
+	else if(room == Level2)
+	{	show_message("Level 3, Begin!");
+		ob_player.x = 50;
+		ob_player.y = 700;
+	}
 	}
 }

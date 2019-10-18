@@ -36,10 +36,10 @@ if(keyboard_check_released(vk_space))
 			
 			if(wall.isEthereal == false) {
 			//placeholder for ethreal sprite wall
-			wall.image_blend = make_color_rgb(240,240,240);
+			wall.image_alpha = .2;
 			wall.isEthereal = true; }
 			else {
-			wall.image_blend = make_color_rgb(0,0,0);
+			wall.image_alpha = 1;
 			wall.isEthereal = false}
 		}
 		instance_destroy(ob_ethereal_beam);		
