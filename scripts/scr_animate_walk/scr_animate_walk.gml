@@ -53,3 +53,7 @@ if (x_prev_dir != x_dir || y_prev_dir != y_dir) {
 		scr_scale_current_sprite(true);
 	}
 }
+// when the player should be grown, try to grow them (edge case for walled-in shrunk).
+if (!shrunk && image_xscale == 0.5){
+	scr_scale_current_sprite(true);
+}

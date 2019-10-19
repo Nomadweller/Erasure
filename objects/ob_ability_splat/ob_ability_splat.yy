@@ -2,7 +2,7 @@
     "id": "afa4b9a6-cf6b-4931-ab24-8d579a914b5d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ob_jump_splat",
+    "name": "ob_ability_splat",
     "eventList": [
         
     ],

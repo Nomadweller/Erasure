@@ -96,7 +96,7 @@ if (deltaMovement > 10) {
 	var current_sprite_name = sprite_get_name(sprite_index);
 	
 	if(string_pos("wht", current_sprite_name) == 0) {
-		instance_create_depth(x+irandom(20) - 10,y+65+irandom(20) - 10,paint_layer, ob_paint);
+		instance_create_depth(x+irandom(20) - 10,y+irandom(20) - 10,paint_layer, ob_paint);
 		paint_layer--;
 		if (paint_layer == 0) {
 			paint_layer = 1599;

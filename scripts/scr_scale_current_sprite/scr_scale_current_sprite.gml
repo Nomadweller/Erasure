@@ -9,10 +9,13 @@ sprite_set_offset(sprite_index, xoff, yoff);
 if (grow){
 	image_xscale = 1;
 	image_yscale = 1;
+	sprite_set_offset(sprite_index, xoff,yoff);
+	if (place_meeting(x,y, ob_wall)){ //Don't re-grow if it would cause collision. 
+		scr_scale_current_sprite(false);
+	}
 }
 else {
 	image_xscale = 0.5;
 	image_yscale = 0.5;
+	sprite_set_offset(sprite_index, xoff,yoff);
 }
-
-sprite_set_offset(sprite_index, xoff,yoff);

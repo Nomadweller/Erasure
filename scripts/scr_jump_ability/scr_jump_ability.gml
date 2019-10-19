@@ -56,9 +56,10 @@ else {
 // Jump has been tested for safety, commense
 if (keyboard_check_released(vk_space)) {
 	// Splash color in start location
-	var jumpSplat = ob_jump_splat;
-	instance_create_depth(x,y, 1,jumpSplat);
-	jumpSplat.image_blend =  make_color_rgb(93, 240, 96);
+	var splat = instance_create_depth(x,y, 1, ob_ability_splat);
+	splat.image_blend = make_color_rgb(93, 240, 96);
+	splat.image_xscale = 2;
+	splat.image_yscale = 2;
 	x = x2;
 	y = y2;
 	can_jump = false;
@@ -66,8 +67,10 @@ if (keyboard_check_released(vk_space)) {
 	// Remove target's visability
 	if jump_target_inst != noone jump_target_inst.image_alpha = 0;
 	// Splash color in end location
-	instance_create_depth(x,y, 1,jumpSplat);
-	jumpSplat.image_blend =  make_color_rgb(93, 240, 96);
+	splat = instance_create_depth(x,y, 1, ob_ability_splat);
+	splat.image_blend = make_color_rgb(93, 240, 96);
+	splat.image_xscale = 2;
+	splat.image_yscale = 2;
 }
 
 

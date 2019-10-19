@@ -6,4 +6,9 @@ scr_scale_current_sprite(false); // shrinking and growing of more sprites is don
 can_shrink = false;
 shrunk = true;
 
+var splat = instance_create_depth(x,y, 1, ob_ability_splat);
+splat.image_blend = make_color_rgb(242, 75, 41);
+splat.image_xscale = 2;
+splat.image_yscale = 2;
+
 alarm_set(1,200);

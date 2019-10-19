@@ -218,7 +218,7 @@
             "Key": "59f29dd5-b683-4675-9d82-75c0ac807b3b",
             "Value": {
                 "id": "a9bcd36b-b065-413b-a089-65e4037815e7",
-                "resourcePath": "sprites\\sp_for_dev_int_wall\\sp_for_dev_int_wall.yy",
+                "resourcePath": "sprites\/sp_for_dev_int_wall\/sp_for_dev_int_wall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -258,7 +258,7 @@
             "Key": "6e855d90-ce77-4409-83d8-93f1cdff9d7b",
             "Value": {
                 "id": "f76f0614-72de-4022-bc8b-a97d711f6fc0",
-                "resourcePath": "sprites\\sp_int_wall\\sp_int_wall.yy",
+                "resourcePath": "sprites\/sp_int_wall\/sp_int_wall.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -300,6 +300,14 @@
                 "id": "b7df5e55-b666-4232-ac99-2c292da6fe55",
                 "resourcePath": "objects\/ob_background\/ob_background.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "77dbdd5e-c4f1-4de0-9155-8024deeded07",
+            "Value": {
+                "id": "78f87400-d127-47e9-bbcc-d787108fb9ac",
+                "resourcePath": "sprites\/spr_scale_paint\/spr_scale_paint.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -474,7 +482,7 @@
             "Key": "afa4b9a6-cf6b-4931-ab24-8d579a914b5d",
             "Value": {
                 "id": "d97507b9-d7fa-462f-a165-8e7d7f315f62",
-                "resourcePath": "objects\/ob_jump_splat\/ob_jump_splat.yy",
+                "resourcePath": "objects\/ob_ability_splat\/ob_ability_splat.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -626,7 +634,7 @@
             "Key": "e8b39250-619c-4efe-9132-327fc960c944",
             "Value": {
                 "id": "b6814fc9-3c57-493c-9ca4-3904410ad43c",
-                "resourcePath": "scripts\\scr_room_reset\\scr_room_reset.yy",
+                "resourcePath": "scripts\/scr_room_reset\/scr_room_reset.yy",
                 "resourceType": "GMScript"
             }
         },
