@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "38e039b6-0214-4b64-86dd-be375c0e2c98",
+            "Value": {
+                "id": "a050c8e2-ee26-411c-a410-8ebab841ffa1",
+                "resourcePath": "objects\\ob_interactable_linked_wall_key\\ob_interactable_linked_wall_key.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4101732f-faeb-42d7-a1c8-da951d60d82d",
             "Value": {
                 "id": "471f6765-77a2-4967-97ad-ebd4541bcfd2",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "7309c15d-684b-4d73-bb42-0ffda95ac48d",
+            "Value": {
+                "id": "ec1085e6-6b42-4d89-984d-581ae9e42e8e",
+                "resourcePath": "objects\\ob_interactable_linked_wall_lock\\ob_interactable_linked_wall_lock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76ea5f98-63cc-4068-a6ca-b3a60de000bb",
             "Value": {
                 "id": "59ce4945-42e4-42ad-b7f5-613ea135245c",
@@ -356,6 +372,14 @@
                 "id": "07d905c1-13ce-48f2-8d81-a1930b039a7f",
                 "resourcePath": "views\/93232294-8247-4821-a5e4-7f6f221add95.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9446601f-95d4-4cff-bfea-ce62ef14fa67",
+            "Value": {
+                "id": "d523653f-335d-481a-a1d5-4559394514fe",
+                "resourcePath": "sprites\\sp_linked_wall_key\\sp_linked_wall_key.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -660,6 +684,14 @@
                 "id": "2ebd9c06-bc6a-4903-885d-d78276e09028",
                 "resourcePath": "objects\/ob_paint\/ob_paint.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f22e95a7-a55e-4f07-9e9e-914bb8ac9ae8",
+            "Value": {
+                "id": "3bd6fee9-1dac-46ad-ba49-77aa93836a81",
+                "resourcePath": "sprites\\sp_linked_wall_chain\\sp_linked_wall_chain.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

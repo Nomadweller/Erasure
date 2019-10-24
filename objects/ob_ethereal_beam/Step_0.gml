@@ -4,3 +4,4 @@ if(place_meeting(x,y, ob_interactable_wall)) {
 	touchingWall = true; }
 else {
 	touchingWall = false; }
+	
