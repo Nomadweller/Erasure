@@ -3,7 +3,8 @@
 inst = instance_nearest(x,y,ob_player);
 //changes color of wall
 if(place_meeting(x,y,ob_wall)) {
-scr_wall_change();	
+var wall = instance_place(x,y,ob_wall);
+scr_wall_change(wall);	
 }
 
 if (inst.color == 1) {

@@ -51,7 +51,7 @@ if (abs(y_spd) > max_spd) {
 // X collisions
 if place_meeting(x+x_spd,y,ob_wall) {
 	var wall = instance_place(x + x_spd,y,ob_wall);
-	scr_wall_change();
+	scr_wall_change(wall);
 	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
 		x+= x_spd; }
@@ -68,8 +68,8 @@ else {
 }
 // Y collisions
 if place_meeting(x,y+y_spd,ob_wall) {
-	scr_wall_change();
-	var wall = instance_place(x,y+y_spd,ob_wall)
+	var wall = instance_place(x,y+y_spd,ob_wall);
+	scr_wall_change(wall);
 	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
 		y+= y_spd; }

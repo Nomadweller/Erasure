@@ -1,14 +1,11 @@
 var beamInstance = ob_ethereal_beam;
 listOfWalls = ds_list_create();
 numOfWall = instance_place_list(x, y, ob_interactable_wall, listOfWalls, true);
-testMessage = false
-testCount = 0;
 	if numOfWall > 0
     {
     for (var i = 0; i < numOfWall; ++i;)
     {
     var wall = ds_list_find_value(listOfWalls, i);   
-	testCount++;
 	if(beamInstance.touchingWall == true)
 	{
 		//checks linked walls
@@ -42,7 +39,3 @@ testCount = 0;
 
 
 ds_list_destroy(listOfWalls);
-if testMessage = false {
-show_message(testCount);
-testMessage = true;
-}

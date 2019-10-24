@@ -41,36 +41,6 @@ if(keyboard_check_released(vk_space))
 	splat.image_blend = c_blue;
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;
-	// affect walls.
-/*    wall = instance_nearest(x,y, ob_interactable_wall);
-	if(beamInstance.touchingWall == true)
-	{
-		//checks linked walls
-		if(object_is_ancestor(wall.object_index, ob_interactable_wall))
-		{
-			if(wall.isKey == true)
-			{
-			if(ob_interactable_linked_wall_lock.isEthereal == false) {
-			//placeholder for ethreal sprite wall
-			ob_interactable_linked_wall_lock.image_alpha = .2;
-			ob_interactable_linked_wall_lock.isEthereal = true; 
-			} else {
-			ob_interactable_linked_wall_lock.image_alpha = 1;
-			ob_interactable_linked_wall_lock.isEthereal = false
-			}
-			}
-		}
-		else {
-		if(wall.isEthereal == false) {
-		//placeholder for ethreal sprite wall
-		wall.image_alpha = .2;
-		wall.isEthereal = true; 
-		} else {
-			wall.image_alpha = 1;
-			wall.isEthereal = false
-		}
-		}	
-	}*/
 	instance_destroy(ob_ethereal_beam);	
 }
 
