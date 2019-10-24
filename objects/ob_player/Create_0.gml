@@ -19,6 +19,10 @@ y_prev_dir = 0;
 
 // For painting
 shownMessage = false;
+hasColor[3] = false;
+hasColor[2] = false;
+hasColor[1] = false;
+hasColor[0] = true;
 paint_layer = 1599;
 
 // For abilities

@@ -1,2 +1,2 @@
-// Trigger to reset Jump ability cooldown
+/// @description Reset Jump ability cooldown
 can_jump = true;

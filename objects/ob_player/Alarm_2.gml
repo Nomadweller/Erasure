@@ -1,2 +1,2 @@
-// Alarm for resize ability cooldown.
+/// @description Reset Resize ability cooldown
 can_shrink = true;

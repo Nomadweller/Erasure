@@ -10,7 +10,7 @@ scr_activate_ability();
 // Move the player
 scr_force_movement();
 
-//Animate movement
+// Animate movement
 scr_animate_walk();
 
 // Interact with NPCs

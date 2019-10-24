@@ -1,13 +1,25 @@
 //Check for a specific instance at location x,y
 inst = instance_place(x,y,ob_npc);
 
-if ((inst != noone && !shownMessage)) {
+if (inst != noone && !hasColor[inst.Color_ID]) {
 	x_spd = 0;
 	y_spd = 0;
 	// Change the player's color to match
-	ob_player.sprite_index = spr_pc_grn;
-	color = 1;
-	// Talk to the NPC
-	show_message("Hello Painter Apprentice, take these colors and make the world beautiful again. Be aware to paint the world you will need to use different colors to get through the lands. You can change colors with 1,2 and 3, and truly use the color with spacebar. Now, fill the walls and floor with life again.");
-	shownMessage = true;
+	switch(inst.Color_ID){
+		case 1:
+		ob_player.sprite_index = spr_pc_grn;
+		show_message("Hooray! you have now learned to paint GREEN :)");
+		break;
+		case 2:
+		ob_player.sprite_index = spr_pc_red;
+		show_message("Hooray! you have now learned to paint RED :)");
+		break;
+		case 3:
+		ob_player.sprite_index = spr_pc_blu;
+		show_message("Hooray! you have now learned to paint BLUE :)");
+		break;
+	}
+	color = inst.Color_ID;
+	//register ability get
+	hasColor[inst.Color_ID] = true;
 }

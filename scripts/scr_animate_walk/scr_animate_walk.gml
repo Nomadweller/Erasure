@@ -49,7 +49,7 @@ if (x_prev_dir != x_dir || y_prev_dir != y_dir) {
 		scr_scale_current_sprite(false);
 	}
 	else {
-		// change to  reflect grown state
+		// change to reflect grown state
 		scr_scale_current_sprite(true);
 	}
 }

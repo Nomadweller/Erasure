@@ -33,7 +33,11 @@ else if(x_dir == 0 & y_dir == 0)
 if(keyboard_check_released(vk_space))
 {
 	// splatter floor
-	splat = instance_create_depth(x,y, 1, ob_ability_splat);
+	splat = instance_create_depth(x,y, paint_layer, ob_ability_splat);
+	paint_layer--;
+	if (paint_layer == 0) {
+		paint_layer = 1599;
+	}
 	splat.image_blend = c_blue;
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;

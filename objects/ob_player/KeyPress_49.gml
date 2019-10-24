@@ -1,6 +1,6 @@
-/// @description Insert description here
+/// @description changes to green
 // You can write your code in this editor
-if(shownMessage == true)
+if(hasColor[1] == true)
 {
 	color = 1;
 	ob_player.sprite_index = spr_pc_grn;
