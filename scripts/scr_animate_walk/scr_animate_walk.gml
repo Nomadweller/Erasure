@@ -44,11 +44,11 @@ if (x_prev_dir != x_dir || y_prev_dir != y_dir) {
 	y_prev_dir = y_dir;
 	
 	// functions to help adhere to ongoing abilities
-	if(shrunk){
+	if(shrunk && image_xscale == 1){
 		// change the sprite we just swapped to to reflect shrunken state
 		scr_scale_current_sprite(false);
 	}
-	else {
+	else if (image_xscale == 0.5){
 		// change to reflect grown state
 		scr_scale_current_sprite(true);
 	}

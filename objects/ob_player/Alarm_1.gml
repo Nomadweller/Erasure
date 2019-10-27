@@ -1,6 +1,7 @@
 /// @description Resize player
-shrunk = false;
 
-scr_scale_current_sprite(true); // grow
+scr_scale_current_sprite(true); // try to grow
+
+shrunk = false;
 
 alarm_set(2,30);

@@ -14,16 +14,8 @@ if (grow)
 	sprite_set_offset(sprite_index, xoff,yoff);
 	if (place_meeting(x,y, ob_wall))//Don't re-grow if it would cause collision.
 	{  
-		var wall = instance_place(x,y,ob_wall);
-		if (object_is_ancestor(wall.object_index, ob_wall)) 
-		{
-			if(wall.isEthereal) 
-			{
-				scr_scale_current_sprite(false);
-			}
-		}
+		scr_scale_current_sprite(false);
 	}
-	
 }
 else 
 {
