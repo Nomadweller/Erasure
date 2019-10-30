@@ -48,17 +48,28 @@ else {
 	if (jump_target_inst.image_alpha == 0){
 		jump_target_inst.image_alpha = 1;
 	}
-	// move the target
+	// move and scale the target
 	jump_target_inst.x = x2;
 	jump_target_inst.y = y2;
+	
+	if (image_xscale = 0.5 && jump_target_inst.image_xscale = 1)
+	{
+		scr_scale_current_sprite(false, jump_target_inst);
+	} 
+	else if (image_xscale = 1 && jump_target_inst.image_xscale = 0.5)
+	{
+		scr_scale_current_sprite(true, jump_target_inst);
+	}
 }
 
 // Jump has been tested for safety, commense
-if (keyboard_check_released(vk_space)) {
+if (keyboard_check_released(vk_space)) 
+{
 	// Splash color in start location
 	var splat = instance_create_depth(x,y, paint_layer, ob_ability_splat);
 	paint_layer--;
-	if (paint_layer == 0) {
+	if (paint_layer == 0) 
+	{
 		paint_layer = 1599;
 	}
 	splat.image_blend = make_color_rgb(93, 240, 96);
@@ -69,16 +80,16 @@ if (keyboard_check_released(vk_space)) {
 	can_jump = false;
 	alarm_set(0,30);
 	// Remove target's visability
-	if jump_target_inst != noone jump_target_inst.image_alpha = 0;
+	if (jump_target_inst != noone) 
+		jump_target_inst.image_alpha = 0;
 	// Splash color in end location
 	splat = instance_create_depth(x,y, paint_layer, ob_ability_splat);
 	paint_layer--;
-	if (paint_layer == 0) {
+	if (paint_layer == 0) 
+	{
 		paint_layer = 1599;
 	}
 	splat.image_blend = make_color_rgb(93, 240, 96);
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;
 }
-
-

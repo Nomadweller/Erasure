@@ -46,14 +46,14 @@ if (x_prev_dir != x_dir || y_prev_dir != y_dir) {
 	// functions to help adhere to ongoing abilities
 	if(shrunk && image_xscale == 1){
 		// change the sprite we just swapped to to reflect shrunken state
-		scr_scale_current_sprite(false);
+		scr_scale_current_sprite(false, self);
 	}
-	else if (image_xscale == 0.5){
+	else if (!shrunk && image_xscale == 0.5){
 		// change to reflect grown state
-		scr_scale_current_sprite(true);
+		scr_scale_current_sprite(true, self);
 	}
 }
 // when the player should be grown, try to grow them (edge case for walled-in shrunk).
 if (!shrunk && image_xscale == 0.5){
-	scr_scale_current_sprite(true);
+	scr_scale_current_sprite(true, self);
 }

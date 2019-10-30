@@ -33,6 +33,7 @@ shrunk = false;
 can_traverse = true;
 jump_distance = 128;
 jump_target_inst = noone;
+cancel = false;
 
 persistent = true;
 depth = -1000;

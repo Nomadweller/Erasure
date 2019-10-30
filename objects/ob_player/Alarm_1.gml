@@ -1,6 +1,6 @@
 /// @description Resize player
 
-scr_scale_current_sprite(true); // try to grow
+scr_scale_current_sprite(true, self); // try to grow
 
 shrunk = false;
 

@@ -4,6 +4,11 @@ var wall;
 if (!instance_exists(ob_ethereal_beam))	{
 instance_create_depth(x,y, 0, beamInstance);
 }
+else {
+	beamInstance.image_alpha = 1;
+	beamInstance.x = x;
+	beamInstance.y = y;
+}
 
 if(x_dir > 0)
 {
@@ -42,5 +47,5 @@ if(keyboard_check_released(vk_space))
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;
 	instance_destroy(ob_ethereal_beam);	
+	//can_traverse = false;
 }
-

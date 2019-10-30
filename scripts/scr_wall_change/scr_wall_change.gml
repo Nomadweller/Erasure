@@ -24,8 +24,10 @@ var wall = argument0;
 	}
 	else
 	{
-		wall.sprite_index = sp_for_dev;
+		//wall.sprite_index = sp_for_dev;
 	}
+	
+	
 	switch (player.color)
 	{
 		case 1 : 
@@ -33,11 +35,12 @@ var wall = argument0;
 		break;
 		case 2:
 		wall.image_blend = make_color_rgb(242, 75, 41);
-		break
+		break;
 		case 3:
 		wall.image_blend = c_blue;
-		break
+		break;
 		default:
+		// Don't change it
 		break;
 	}
 
