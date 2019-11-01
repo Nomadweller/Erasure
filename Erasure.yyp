@@ -442,7 +442,7 @@
             "Key": "a1a86b67-e2ce-4095-a956-87a090f83e28",
             "Value": {
                 "id": "7d79acd8-299d-44c4-bf27-dc7476d43a21",
-                "resourcePath": "views\\a1a86b67-e2ce-4095-a956-87a090f83e28.yy",
+                "resourcePath": "views\/a1a86b67-e2ce-4095-a956-87a090f83e28.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -602,7 +602,7 @@
             "Key": "c13785b7-6d2b-4849-8a28-e1a893c61a9a",
             "Value": {
                 "id": "3825b595-13f2-4994-886f-a9ec0d9c4d65",
-                "resourcePath": "views\\c13785b7-6d2b-4849-8a28-e1a893c61a9a.yy",
+                "resourcePath": "views\/c13785b7-6d2b-4849-8a28-e1a893c61a9a.yy",
                 "resourceType": "GMFolder"
             }
         },
