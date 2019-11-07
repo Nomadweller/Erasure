@@ -1,4 +1,8 @@
 /// @Triggers effects of abilities that just finished animating
+
+animating = false;
+
+
 var current_sprite_name = sprite_get_name(sprite_index);
 
 if(string_pos("spr_pc_jump", current_sprite_name) != 0){
@@ -18,6 +22,19 @@ if(string_pos("spr_pc_jump", current_sprite_name) != 0){
 	splat.image_yscale = 2;
 	
 	sprite_index = spr_pc_grn;
-	
-	animating = false;
+
 }
+
+if (string_pos("to_grn", current_sprite_name) != 0){
+	color = 1;
+	ob_player.sprite_index = spr_pc_grn;
+}
+if (string_pos("to_red", current_sprite_name) != 0){
+	color = 2;
+	ob_player.sprite_index = spr_pc_red;
+}
+if (string_pos("to_blu", current_sprite_name) != 0){
+	color = 3;
+	ob_player.sprite_index = spr_pc_blu;
+}
+	

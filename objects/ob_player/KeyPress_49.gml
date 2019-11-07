@@ -2,6 +2,27 @@
 // You can write your code in this editor
 if(hasColor[1] == true && !max(keyboard_check(vk_space),keyboard_check_released(vk_space)))
 {
-	color = 1;
-	ob_player.sprite_index = spr_pc_grn;
+	
+	switch(color){
+		case 0: 
+		//swap from white
+		sprite_index  = spr_pc_wht_to_grn;
+		break;
+		case 1:
+		//swap from green, do nothing
+		break;
+		case 2:
+		//swap from red
+		sprite_index  = spr_pc_red_to_grn;
+		break;
+		case 3:
+		//swap from blue
+		sprite_index  = spr_pc_blu_to_grn;
+		break;
+		default:
+		color = 2;
+		ob_player.sprite_index = spr_pc_grn;
+		break;
+	}
+	animating = true;
 }
