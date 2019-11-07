@@ -1,5 +1,4 @@
 // This  funciton will activate or deactivate walking sprites of the corresponding color
-
 if (x_prev_dir != x_dir || y_prev_dir != y_dir) {
 	//  Use direction to detemine which  sprite to use 0 being up, and other directions indexed clockwise.
 	var walk_sprite = "";

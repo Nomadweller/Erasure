@@ -42,7 +42,6 @@ y2 = y1 + sign(y_dir) * modified_jump;
 // Project jump destination
 if (jump_target_inst == noone){
 	jump_target_inst = instance_create_depth(x2,y2,-3600,ob_jump_target);
-	//show_message("created");
 }
 else {
 	if (jump_target_inst.image_alpha == 0){

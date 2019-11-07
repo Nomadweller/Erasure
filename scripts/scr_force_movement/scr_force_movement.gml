@@ -1,4 +1,6 @@
 // Do not move if aiming jump
+if(!instance_exists(ob_dialog_controller))
+{
 if (ability && color = 1){
 	return;
 }
@@ -106,23 +108,12 @@ if (deltaMovement > 10) {
 }
 // tutorial stuff: 
 if(place_meeting(x,y, ob_end_goal)) {
-	if	(room == Level3) {
-		show_message("You did it! You know I always belived in you and your space pressing ability. Let's do it again.");
+	if	(room == Level5) {
 		game_restart();
 		}
 	else {
 	room = room_goto_next();
 	room_goto_next();
-	if (room == Level1)
-	{
-		show_message("Level 2, Begin!");
-		ob_player.x = 1000;
-		ob_player.y = 350;
-	}
-	else if(room == Level2)
-	{	show_message("Level 3, Begin!");
-		ob_player.x = 50;
-		ob_player.y = 700;
-	}
-	}
+}
+}
 }

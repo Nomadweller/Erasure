@@ -6,7 +6,6 @@ var wall = argument0;
 	{
 		if(object_is_ancestor(wall.object_index, ob_interactable_wall))
 		{
-			//show_message("test");
 			if(wall.isKey == false) 
 			{
 				wall.sprite_index = sp_linked_wall_chain;

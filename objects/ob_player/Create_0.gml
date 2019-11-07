@@ -37,5 +37,3 @@ cancel = false;
 
 persistent = true;
 depth = -1000;
-if(ev_game_start)
-show_message("Hey you! Come talk to me, I've got something for you. I'm the red blob over here.")	

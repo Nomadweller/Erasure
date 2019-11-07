@@ -1,4 +1,4 @@
-	if (room == Level1)
+	/*if (room == Level1)
 	{
 		ob_player.x = 350;
 		ob_player.y = 700;

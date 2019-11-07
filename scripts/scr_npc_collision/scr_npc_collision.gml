@@ -8,15 +8,15 @@ if (inst != noone && !hasColor[inst.Color_ID]) {
 	switch(inst.Color_ID){
 		case 1:
 		ob_player.sprite_index = spr_pc_grn;
-		show_message("Hooray! you have now learned to paint GREEN :), You can press 1 to get back to green.");
+		start_dialog(ob_dialog, ob_dialog.d_green_text);
 		break;
 		case 2:
 		ob_player.sprite_index = spr_pc_red;
-		show_message("Hooray! you have now learned to paint RED :), You can press 2 to get back to red.");
+		start_dialog(ob_dialog, ob_dialog.d_red_text);
 		break;
 		case 3:
 		ob_player.sprite_index = spr_pc_blu;
-		show_message("Hooray! you have now learned to paint BLUE :), You can press 3 to get back to blue.");
+		start_dialog(ob_dialog, ob_dialog.d_blue_text);
 		break;
 	}
 	color = inst.Color_ID;
