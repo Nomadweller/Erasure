@@ -17,6 +17,11 @@ deltaMovement = 0;
 x_prev_dir = 0;
 y_prev_dir = 0;
 
+//checkpoint tracker
+Checkpoint = -1;
+check_x = x;
+check_y = y;
+
 // For painting
 shownMessage = false;
 hasColor[3] = false;
@@ -33,7 +38,6 @@ shrunk = false;
 can_traverse = true;
 jump_distance = 128;
 jump_target_inst = noone;
-cancel = false;
 
 persistent = true;
 depth = -1000;

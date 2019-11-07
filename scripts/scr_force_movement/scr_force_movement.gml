@@ -1,6 +1,9 @@
-// Do not move if aiming jump
-if(!instance_exists(ob_dialog_controller))
+//don't move when dialog is going
+if(instance_exists(ob_dialog_controller))
 {
+	return;
+}
+// Do not move if aiming jump
 if (ability && color = 1){
 	return;
 }
@@ -112,8 +115,8 @@ if(place_meeting(x,y, ob_end_goal)) {
 		game_restart();
 		}
 	else {
-	room = room_goto_next();
-	room_goto_next();
+		room = room_goto_next();
+		room_goto_next();
+	}
 }
-}
-}
+
