@@ -33,11 +33,14 @@ paint_layer = 1599;
 // For abilities
 color = 0;
 can_jump = true;
+jump_dest_x = 0;
+jump_dest_y = 0;
 can_shrink = true;
 shrunk = false;
 can_traverse = true;
 jump_distance = 128;
 jump_target_inst = noone;
+animating = false;
 
 persistent = true;
 depth = -1000;

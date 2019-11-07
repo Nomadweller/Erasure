@@ -7,6 +7,7 @@ var x1 = x;
 var x2 = x + (sign(x_dir) * jump_distance);
 var y1 = y;
 var y2 = y + (sign(y_dir) * jump_distance);
+var jump_sprite = spr_pc_jump_up;
 
 if (x1 == x2){
 	// adjust y-jump
@@ -34,6 +35,20 @@ else {
 			break;
 		}
 	}
+}
+
+if (x2 < x1){
+	// use left
+	jump_sprite = spr_pc_jump_left;
+} else if (x2 > x1){
+	//use right
+	jump_sprite = spr_pc_jump_right;
+} else if (y1 < y2){
+	//use up
+	jump_sprite = spr_pc_jump_up;
+} else if (y1 > y2){
+	//use down
+	jump_sprite = spr_pc_jump_down;
 }
 
 x2 = x1 + sign(x_dir) * modified_jump;
@@ -74,21 +89,21 @@ if (keyboard_check_released(vk_space))
 	splat.image_blend = make_color_rgb(93, 240, 96);
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;
-	x = x2;
-	y = y2;
-	can_jump = false;
-	alarm_set(0,30);
+	
 	// Remove target's visability
 	if (jump_target_inst != noone) 
 		jump_target_inst.image_alpha = 0;
-	// Splash color in end location
-	splat = instance_create_depth(x,y, paint_layer, ob_ability_splat);
-	paint_layer--;
-	if (paint_layer == 0) 
-	{
-		paint_layer = 1599;
-	}
-	splat.image_blend = make_color_rgb(93, 240, 96);
-	splat.image_xscale = 2;
-	splat.image_yscale = 2;
+	
+	animating = true;
+	
+	// Set sprite to appropriate jump animation
+	sprite_index = jump_sprite;
+	image_index = 0;
+	
+	// movement will be done on frame 7 of the animation using these values via event
+	jump_dest_x = x2;
+	jump_dest_y = y2;
+	
+	// paint splat and ability reset will be done after last frame of animation
+	
 }

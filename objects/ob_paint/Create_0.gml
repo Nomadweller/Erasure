@@ -1,10 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @color and move paint
+// rotate and adjust position randomly
+x += irandom_range(0, 20);
+y += irandom_range(0, 20);
+image_angle = irandom_range(0,40);
+
 inst = instance_nearest(x,y,ob_player);
 //changes color of wall
 if(place_meeting(x,y,ob_wall)) {
-var wall = instance_place(x,y,ob_wall);
-scr_wall_change(wall);	
+	var wall = instance_place(x,y,ob_wall);
+	scr_wall_change(wall);	
 }
 
 if (inst.color == 1) {

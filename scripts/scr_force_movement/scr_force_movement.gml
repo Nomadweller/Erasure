@@ -1,13 +1,10 @@
-//don't move when dialog is going
-if(instance_exists(ob_dialog_controller))
+
+// Do not move if aiming jump, aiming ray, dialog is moving, or player is animating
+if (ability && color = 1 ||
+	instance_exists(ob_dialog_controller) ||
+	ability && color = 3 || 
+	animating)
 {
-	return;
-}
-// Do not move if aiming jump
-if (ability && color = 1){
-	return;
-}
-if (ability && color = 3){
 	return;
 }
 
@@ -101,7 +98,7 @@ if (deltaMovement > 10) {
 	var current_sprite_name = sprite_get_name(sprite_index);
 	
 	if(string_pos("wht", current_sprite_name) == 0) {
-		instance_create_depth(x+irandom(20) - 10,y+irandom(20) - 10,paint_layer, ob_paint);
+		instance_create_depth(x,y,paint_layer, ob_paint);
 		paint_layer--;
 		if (paint_layer == 0) {
 			paint_layer = 1599;
