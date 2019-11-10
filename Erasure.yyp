@@ -431,14 +431,6 @@
             }
         },
         {
-            "Key": "77dbdd5e-c4f1-4de0-9155-8024deeded07",
-            "Value": {
-                "id": "78f87400-d127-47e9-bbcc-d787108fb9ac",
-                "resourcePath": "sprites\/spr_scale_paint\/spr_scale_paint.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "79e2fb48-b82e-4016-b9b5-24fba3660fb3",
             "Value": {
                 "id": "3b0b060e-b94b-4b8f-b486-5955bb2a24d4",
@@ -538,7 +530,7 @@
             "Key": "96c13ea8-2f94-410e-861b-cdeb0e042e28",
             "Value": {
                 "id": "351a0113-ddc8-4b69-a0a1-450d0be6544b",
-                "resourcePath": "sprites\/sp_floor\/sp_floor.yy",
+                "resourcePath": "sprites\/sp_floor_1\/sp_floor_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -676,6 +668,14 @@
                 "id": "fd7e4229-3cd7-4d8b-a7ed-9a6cb073d5d3",
                 "resourcePath": "views\/aca627f6-4f22-43f9-a479-8596b5b586e9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "acb7b4fa-6a73-4f13-89e3-05f49ae7559f",
+            "Value": {
+                "id": "87012027-5ffb-4408-b538-c6e2235f2961",
+                "resourcePath": "sprites\/sp_floor_2\/sp_floor_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -879,6 +879,14 @@
             }
         },
         {
+            "Key": "dd804977-54f8-49b3-88b2-d42e8b09b72a",
+            "Value": {
+                "id": "efcb7cd5-41bc-47ee-bdfc-5e3e5568327e",
+                "resourcePath": "views\/dd804977-54f8-49b3-88b2-d42e8b09b72a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dda96b66-be03-4754-9227-07fb189a44ce",
             "Value": {
                 "id": "cb3f20a1-f317-465b-9c46-88e75c9f3cf5",
@@ -1019,6 +1027,14 @@
             "Value": {
                 "id": "75c96e83-c3c0-4f78-a405-946a5b3c7e6a",
                 "resourcePath": "sprites\/spr_pc_red_death\/spr_pc_red_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f8c7c83b-bc81-42ac-be39-1ed57ed40dd3",
+            "Value": {
+                "id": "22d1f7dc-83e4-4374-9331-a83a703bd207",
+                "resourcePath": "sprites\/sp_floor_3\/sp_floor_3.yy",
                 "resourceType": "GMSprite"
             }
         },
