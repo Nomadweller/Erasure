@@ -1,0 +1,1 @@
+// make checkpoints invisible
