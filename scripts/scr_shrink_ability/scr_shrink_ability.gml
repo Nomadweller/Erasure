@@ -15,4 +15,4 @@ splat.image_blend = make_color_rgb(242, 75, 41);
 splat.image_xscale = 2;
 splat.image_yscale = 2;
 
-alarm_set(1,200);
+alarm_set(1,350);
