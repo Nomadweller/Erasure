@@ -108,7 +108,7 @@ if (deltaMovement > 10) {
 }
 // tutorial stuff: 
 if(place_meeting(x,y, ob_end_goal)) {
-	if	(room == Level5) {
+	if	(room == Level6) {
 		game_restart();
 		}
 	else {

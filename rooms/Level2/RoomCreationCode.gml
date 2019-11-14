@@ -1,2 +1,2 @@
-ob_player.x = 50;
-ob_player.y = 510;
+ob_player.x = 110;
+ob_player.y = 710;

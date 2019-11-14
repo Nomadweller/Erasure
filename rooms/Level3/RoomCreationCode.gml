@@ -1,2 +1,3 @@
-ob_player.x = 160;
-ob_player.y = 730;
+ob_player.x = 980;
+ob_player.y = 220;
+ob_player.shownMessage = false;

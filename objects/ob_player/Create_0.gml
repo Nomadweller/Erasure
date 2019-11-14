@@ -41,6 +41,10 @@ can_traverse = true;
 jump_distance = 128;
 jump_target_inst = noone;
 animating = false;
+hasCheese = false;
+hasExplored = false;
+paintedWallCount = 0;
+timedDelayActive = false;
 
 persistent = true;
 depth = -1000;

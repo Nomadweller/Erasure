@@ -14,16 +14,26 @@ var wall = argument0;
 			{
 				wall.sprite_index = sp_linked_wall_key;
 			}
-		
+		}
+		else if(wall.object_index == ob_obj_wall)
+		{
+		if(wall.sprite_index == sp_white_wall)
+			ob_player.paintedWallCount++;		
+		if(ob_player.paintedWallCount == 76)
+		{
+			hasExplored = true;
+		}
+		    
+		wall.sprite_index = sp_wall;
 		}
 		else
 		{
-		wall.sprite_index = sp_for_dev_int_wall;
+		wall.sprite_index = sp_int_wall;
 		}
 	}
 	else
 	{
-		//wall.sprite_index = sp_for_dev;
+		wall.sprite_index = sp_wall;
 	}
 	
 	
