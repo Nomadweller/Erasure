@@ -18,7 +18,7 @@ if(hasColor[3] == true && !max(keyboard_check(vk_space),keyboard_check_released(
 		break;
 		default:
 		color = 2;
-		ob_player.sprite_index = spr_pc_blu;
+		sprite_index = spr_pc_blu;
 		animating = true;
 		break;
 	}

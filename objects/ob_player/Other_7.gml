@@ -27,14 +27,35 @@ if(string_pos("spr_pc_jump", current_sprite_name) != 0){
 
 if (string_pos("to_grn", current_sprite_name) != 0){
 	color = 1;
-	ob_player.sprite_index = spr_pc_grn;
+	sprite_index = spr_pc_grn;
 }
 if (string_pos("to_red", current_sprite_name) != 0){
 	color = 2;
-	ob_player.sprite_index = spr_pc_red;
+	sprite_index = spr_pc_red;
 }
 if (string_pos("to_blu", current_sprite_name) != 0){
 	color = 3;
-	ob_player.sprite_index = spr_pc_blu;
+	sprite_index = spr_pc_blu;
 }
+
+if (string_pos("death", current_sprite_name) != 0){
 	
+	// Reset player to checkpoint
+	
+	x = check_x;
+	y = check_y;
+	
+	// Forget where we may have  been jumping
+	jump_dest_x = x;
+	jump_dest_y = y;
+	
+	//  Start respawn animation
+	color = 0;
+	sprite_index = spr_pc_wht_respawn;
+	animating = true;
+}
+
+if (string_pos("respawn", current_sprite_name) != 0){
+	//  Start respawn animation
+	sprite_index = spr_pc_wht;
+}

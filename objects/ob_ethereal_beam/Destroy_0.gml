@@ -24,13 +24,17 @@ numOfWall = instance_place_list(x, y, ob_interactable_wall, listOfWalls, true);
 			}
 		}
 		else {
-			if(wall.isEthereal == false) {
-		//placeholder for ethreal sprite wall
+			if(wall.isEthereal == false && wall.animating == false) {
+			//placeholder for ethreal sprite wall
 			wall.image_alpha = .2;
 			wall.isEthereal = true; 
-			} else {
+			// play change animation
+			wall.sprite_index = sp_int_wall_anim;
+			wall.animating = true;
+			} else if (wall.animating == false){
 			wall.image_alpha = 1;
-			wall.isEthereal = false
+			wall.isEthereal = false;
+			sprite_index = sp_int_wall;
 			}
 		}	
 	}
