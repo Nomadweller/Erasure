@@ -18,8 +18,8 @@ var wall = argument0;
 		else if(wall.object_index == ob_obj_wall)
 		{
 		if(wall.sprite_index == sp_white_wall)
-			ob_player.paintedWallCount++;		
-		if(ob_player.paintedWallCount == 76)
+			player.paintedWallCount++;		
+		if(player.paintedWallCount == 76)
 		{
 			hasExplored = true;
 		}
