@@ -82,7 +82,7 @@
             "Key": "1241b3d7-e9de-4961-9102-e8400279e962",
             "Value": {
                 "id": "0c144bc3-4db0-4727-89d5-f7cff8b50517",
-                "resourcePath": "sprites\/sp_ethreal_beam\/sp_ethreal_beam.yy",
+                "resourcePath": "sprites\/sp_etherial_blast\/sp_etherial_blast.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1284,6 +1284,14 @@
                 "id": "426a8df5-a0a5-4241-98b2-e2f9bb8efc8a",
                 "resourcePath": "rooms\/Level5\/Level5.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "fa3347b8-18e5-49f3-b3c6-d1fe5a39ca30",
+            "Value": {
+                "id": "c872234a-961c-4e52-9180-21717dc07137",
+                "resourcePath": "sprites\/sp_ethreal_beam\/sp_ethreal_beam.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

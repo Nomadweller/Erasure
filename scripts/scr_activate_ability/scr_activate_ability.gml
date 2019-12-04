@@ -1,5 +1,5 @@
 // Script for checking when an ability has been triggered and calling the proper function
-if (ability)
+if (ability  && !animating)
 {
 	if ((color == 1) && can_jump) {
 		// The Jump ability has been activated
@@ -10,7 +10,7 @@ if (ability)
 		scr_shrink_ability();
 	}
 	if ((color == 3) && can_traverse) {
-		// The scale ability has been activated
+		// The etherial ability has been activated
 		scr_ethereal_ability();
 	}
 }

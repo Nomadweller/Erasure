@@ -1,34 +1,36 @@
-var beamInstance = ob_ethereal_beam;
-var wall;
+var beamInstance;
 
 if (!instance_exists(ob_ethereal_beam))	{
-instance_create_depth(x,y, 0, beamInstance);
+beamInstance = instance_create_depth(x,y-44, 0, ob_ethereal_beam);
+beamInstance.parent = self;
+beamInstance.image_alpha = 0.7;
 }
 else {
-	beamInstance.image_alpha = 1;
-	beamInstance.x = x;
-	beamInstance.y = y;
+	beamInstance = instance_nearest(x,y,ob_ethereal_beam);
+	//beamInstance.image_alpha = 0.7;
+	//beamInstance.x = x;
+	//beamInstance.y = y-44;
 }
 
 if(x_dir > 0)
 {
-	beamInstance.image_alpha = 1;
-	beamInstance.image_angle = 270;
+	beamInstance.image_alpha = 0.7;
+	beamInstance.image_angle = 180;
 }
 else if(x_dir < 0)
 {
-	beamInstance.image_alpha = 1;
-	beamInstance.image_angle = 90;
+	beamInstance.image_alpha = 0.7;
+	beamInstance.image_angle = 0;
 }
 else if(y_dir > 0)
 {
-	beamInstance.image_alpha = 1;
-	beamInstance.image_angle = 180;
+	beamInstance.image_alpha = 0.7;
+	beamInstance.image_angle = 90;
 }
 else if(y_dir < 0)
 {
-	beamInstance.image_alpha = 1;
-	beamInstance.image_angle = 0;
+	beamInstance.image_alpha = 0.7;
+	beamInstance.image_angle = 270;
 }
 else if(x_dir == 0 & y_dir == 0) 
 {
@@ -46,6 +48,10 @@ if(keyboard_check_released(vk_space))
 	splat.image_blend = c_blue;
 	splat.image_xscale = 2;
 	splat.image_yscale = 2;
-	instance_destroy(ob_ethereal_beam);	
-	//can_traverse = false;
+	// perform animation
+	animating = true;
+	can_traverse = false;
+	beamInstance.sprite_index = sp_etherial_blast;
+	beamInstance.image_index = 0;
+	beamInstance.image_alpha = 1;
 }
