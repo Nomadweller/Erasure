@@ -18,10 +18,11 @@ if(string_pos("spr_pc_jump", current_sprite_name) != 0){
 		paint_layer = 1599;
 	}
 	splat.image_blend = make_color_rgb(93, 240, 96);
-	splat.image_xscale = 2;
-	splat.image_yscale = 2;
+	splat.image_xscale = 1.4;
+	splat.image_yscale = 1.4;
 	
-	sprite_index = spr_pc_grn;
+	sprite_index = jump_prev_sprite;
+	
 
 }
 

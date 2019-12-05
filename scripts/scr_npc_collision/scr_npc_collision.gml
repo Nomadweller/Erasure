@@ -1,7 +1,7 @@
 //Check for a specific instance at location x,y
 inst = instance_place(x,y,ob_npc);
 
-if (inst != noone && !hasColor[inst.Color_ID]) {
+if (inst != noone && !hasColor[inst.Color_ID] && room != Credits2) {
 	x_spd = 0;
 	y_spd = 0;
 	// Change the player's color to match

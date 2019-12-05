@@ -12,7 +12,7 @@ if (paint_layer == 0) {
 	paint_layer = 1599;
 }
 splat.image_blend = make_color_rgb(242, 75, 41);
-splat.image_xscale = 2;
-splat.image_yscale = 2;
+splat.image_xscale = 1.4;
+splat.image_yscale = 1.4;
 
 alarm_set(1,350);

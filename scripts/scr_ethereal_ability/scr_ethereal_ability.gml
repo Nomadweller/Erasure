@@ -46,8 +46,8 @@ if(keyboard_check_released(vk_space))
 		paint_layer = 1599;
 	}
 	splat.image_blend = c_blue;
-	splat.image_xscale = 2;
-	splat.image_yscale = 2;
+	splat.image_xscale = 1.4;
+	splat.image_yscale = 1.4;
 	// perform animation
 	animating = true;
 	can_traverse = false;

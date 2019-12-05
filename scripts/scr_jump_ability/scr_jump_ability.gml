@@ -87,8 +87,8 @@ if (keyboard_check_released(vk_space))
 		paint_layer = 1599;
 	}
 	splat.image_blend = make_color_rgb(93, 240, 96);
-	splat.image_xscale = 2;
-	splat.image_yscale = 2;
+	splat.image_xscale = 1.4;
+	splat.image_yscale = 1.4;
 	
 	// Remove target's visability
 	if (jump_target_inst != noone) 
@@ -97,6 +97,7 @@ if (keyboard_check_released(vk_space))
 	animating = true;
 	
 	// Set sprite to appropriate jump animation
+	jump_prev_sprite = sprite_index;
 	sprite_index = jump_sprite;
 	image_index = 0;
 	
