@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "3cac3c90-309b-4db9-80cb-c0027c085a95",
+            "Value": {
+                "id": "5aa44522-cef1-4200-a988-e6a27e496023",
+                "resourcePath": "objects\\ob_creditsbg\\ob_creditsbg.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3d64c04e-3191-4a8e-84e6-de7d4eaa1662",
             "Value": {
                 "id": "f427e082-927a-411c-84ca-b9c5ea500bac",
@@ -307,6 +315,14 @@
             "Value": {
                 "id": "d0406383-f04d-4ab3-a382-c779589ca2c1",
                 "resourcePath": "sprites\/redsplat2\/redsplat2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3f89c2d0-9acf-4489-9e01-6f27c368523d",
+            "Value": {
+                "id": "0e621c66-b604-46ad-a02e-b912893f0ac6",
+                "resourcePath": "sprites\\spr_avatar_green_sad\\spr_avatar_green_sad.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -607,6 +623,14 @@
             }
         },
         {
+            "Key": "8328590b-62d2-483b-ab85-8c067b82f02c",
+            "Value": {
+                "id": "aed302dd-0d2c-4328-bab2-c45712b9128b",
+                "resourcePath": "sprites\\spr_avatar_red_sad\\spr_avatar_red_sad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "852e3978-ac83-4d19-b147-9985c32af75f",
             "Value": {
                 "id": "f2ce71ff-9804-41eb-ab01-a68cb0b053d6",
@@ -631,10 +655,26 @@
             }
         },
         {
+            "Key": "8b239f02-1404-4253-8247-083916eab82e",
+            "Value": {
+                "id": "150a5f25-f332-4da1-87f9-40e9139c62a8",
+                "resourcePath": "rooms\\Credits2\\Credits2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "91641e2e-d068-4d97-977f-6ad786d4083b",
             "Value": {
                 "id": "a6d2aab3-37d4-493c-8d61-196104f6a61d",
                 "resourcePath": "sprites\/spr_pc_wht_up\/spr_pc_wht_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "91e91938-72b7-4dd4-b3cd-8bf0a4b939b9",
+            "Value": {
+                "id": "936cb845-10f6-4f65-95c1-523f9f707bcb",
+                "resourcePath": "sprites\\CreditBGMain\\CreditBGMain.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1039,6 +1079,14 @@
             }
         },
         {
+            "Key": "cd772fa2-6241-4bc6-949a-9aa39e677dfe",
+            "Value": {
+                "id": "6c4b858e-13ce-46b0-b5f3-ad22114ce982",
+                "resourcePath": "objects\\ob_creditsbg1\\ob_creditsbg1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cd851a85-6d4b-4d32-a9e1-195785b7cae2",
             "Value": {
                 "id": "e5588370-7941-42dc-89ff-6233738151d8",
@@ -1147,6 +1195,14 @@
             "Value": {
                 "id": "cc7ab6f1-f090-4a5c-abe4-7c53daec2678",
                 "resourcePath": "sprites\/spr_pc_red_up\/spr_pc_red_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e30672d3-6be7-4aed-be35-a928386d9a10",
+            "Value": {
+                "id": "8284984d-4322-4ca3-9777-d3b4bcacdba9",
+                "resourcePath": "sprites\\spr_avatar_blue_sad\\spr_avatar_blue_sad.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1268,14 +1324,6 @@
                 "id": "22d1f7dc-83e4-4374-9331-a83a703bd207",
                 "resourcePath": "sprites\/sp_floor_3\/sp_floor_3.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f8fa7157-52dd-4698-b26d-69ba3a930688",
-            "Value": {
-                "id": "4cbbb35a-cc68-4e24-ae1e-8e5fd1158c61",
-                "resourcePath": "objects\/ob_creditsbg\/ob_creditsbg.yy",
-                "resourceType": "GMObject"
             }
         },
         {
