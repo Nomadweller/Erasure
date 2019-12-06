@@ -14,30 +14,34 @@ numOfWall = instance_place_list(x, y, ob_interactable_wall, listOfWalls, true);
 			if(wall.isKey == true)
 			{
 				if(ob_interactable_linked_wall_lock.isEthereal == false) {
-				//placeholder for ethreal sprite wall
-				ob_interactable_linked_wall_lock.image_alpha = .2;
-				ob_interactable_linked_wall_lock.isEthereal = true; 
-			} else {
-				ob_interactable_linked_wall_lock.image_alpha = 1;
-				ob_interactable_linked_wall_lock.isEthereal = false
-			}
+					//placeholder for ethreal sprite wall
+					// play change animation
+					ob_interactable_linked_wall_lock.image_alpha = .2;
+					ob_interactable_linked_wall_lock.isEthereal = true; 
+				
+				} else {
+					ob_interactable_linked_wall_lock.image_alpha = 1;
+					ob_interactable_linked_wall_lock.isEthereal = false
+				}
 			}
 		}
-		else {
-			if(wall.isEthereal == false && wall.animating == false) {
-			
+		else 
+		{
+			if(wall.isEthereal == false && wall.animating == false)
+			{
 				// play change animation
 				wall.sprite_index = sp_int_wall_anim;
 				wall.animating = true;
 			
-			} else if (wall.animating == false){
+			} else if (wall.animating == false)
+			{
 				wall.image_alpha = 1;
 				wall.isEthereal = false;
-				sprite_index = sp_int_wall;
+				wall.sprite_index = sp_int_wall;
 			}
 		}	
 	}
-        }
+    }
     }
 
 

@@ -25,6 +25,7 @@ check_y = y;
 // For painting
 shownMessage = false;
 hasColor[3] = false;
+//hasColor[3] = true; //cheat mode
 hasColor[2] = false;
 hasColor[1] = false;
 hasColor[0] = true;
@@ -38,10 +39,12 @@ jump_dest_y = 0;
 can_shrink = true;
 shrunk = false;
 can_traverse = true;
-jump_distance = 160;
+jump_distance = 155;
 jump_prev_sprite = -1;
 jump_target_inst = noone;
 animating = false;
+
+
 hasCheese = false;
 hasExplored = false;
 paintedWallCount = 0;

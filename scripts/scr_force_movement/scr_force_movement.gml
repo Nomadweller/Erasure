@@ -56,7 +56,8 @@ if place_meeting(x+x_spd,y,ob_wall) {
 	scr_wall_change(wall);
 	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
-		x+= x_spd; }
+			x+= x_spd; 
+		}
 	}
 	else {
 		while (!place_meeting(x+sign(x_spd),y,ob_wall)) {
@@ -74,12 +75,14 @@ if place_meeting(x,y+y_spd,ob_wall) {
 	scr_wall_change(wall);
 	if (object_is_ancestor(wall.object_index, ob_wall)) {
 		if(wall.isEthereal) {
-		y+= y_spd; }
+			y+= y_spd; 
+		}
 	}
 	else {
 		while (!place_meeting(x,y+sign(y_spd),ob_wall)) {
 			y += sign(y_spd);
 		}
+		scr_wall_change(wall);
 	}
 }
 else {

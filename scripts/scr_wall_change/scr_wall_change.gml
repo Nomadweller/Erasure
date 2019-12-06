@@ -1,7 +1,8 @@
-player = instance_nearest(x,y, ob_player)
+var player = instance_nearest(x,y, ob_player)
 wall = instance_nearest(x,y, ob_wall)
 var wall = argument0;
-
+if (wall.sprite_index == sp_white_wall)
+{ 
 	if(object_is_ancestor(wall.object_index, ob_wall))
 	{
 		if(object_is_ancestor(wall.object_index, ob_interactable_wall))
@@ -17,25 +18,28 @@ var wall = argument0;
 		}
 		else if(wall.object_index == ob_obj_wall)
 		{
-		if(wall.sprite_index == sp_white_wall)
-			player.paintedWallCount++;		
-		if(player.paintedWallCount == 76)
-		{
-			hasExplored = true;
-		}
+			if(wall.sprite_index == sp_white_wall){
+				player.paintedWallCount++;	
+				wall.sprite_index = sp_wall;
+			}
+				
+				
+			if(player.paintedWallCount >= 80)
+			{
+				player.hasExplored = true;
+			}
 		    
-		wall.sprite_index = sp_wall;
 		}
 		else
 		{
-		wall.sprite_index = sp_int_wall;
+			wall.sprite_index = sp_int_wall;
 		}
 	}
 	else
 	{
 		wall.sprite_index = sp_wall;
 	}
-	
+}
 	
 	switch (player.color)
 	{
